@@ -8,7 +8,7 @@ Présentation
 
 Le but va être d'apprendre à de petites voitures à se déplacer de manière autonome sur un circuit.
 
-![Texte alternatif…](https://amp.businessinsider.com/images/57768fc1dd0895585b8b4d01-1920-1439.png =300x)
+![Texte alternatif…](https://amp.businessinsider.com/images/57768fc1dd0895585b8b4d01-1920-1439.png=300x)
 
 Comme ça en fait : 
 
