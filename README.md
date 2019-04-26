@@ -8,16 +8,16 @@ Présentation
 
 Le but va être d'apprendre à de petites voitures à se déplacer de manière autonome sur un circuit.
 
-![Texte alternatif…](https://amp.businessinsider.com/images/57768fc1dd0895585b8b4d01-1920-1439.png=300x)
+![Texte alternatif…](https://amp.businessinsider.com/images/57768fc1dd0895585b8b4d01-1920-1439.png =300x)
 
 Comme ça en fait : 
 
-![Texte alternatif…](https://drive.google.com/uc?id=1ums42Jb9u-cz9fxdZjznur8HnkJfmU3u)
+![Texte alternatif…](https://drive.google.com/uc?id=1ums42Jb9u-cz9fxdZjznur8HnkJfmU3u =300x)
 
 ###Structure des voitures
 Chaque voiture est modélisée par un rectangle de taille fixée (réglable dans la classe Car de Components). Elle se dirige en prenant en compte sa distance aux murs dans les directions définies par l'attribut sensor_angles. 
 
-![sensors](https://drive.google.com/uc?id=14w72mTyjQM4kzG4PbpxYrDyTaA5BhzEN)
+![sensors](https://drive.google.com/uc?id=14w72mTyjQM4kzG4PbpxYrDyTaA5BhzEN =300x)
 
 La fonction que l'on va apprendre est précisément celle qui prend en entrée ces distances et qui renvoie une variation angulaire et une vitesse (voir la fonction move de Car pour plus de précision sur la physique), cette fonction est approximée avec un réseau de neurone maison défini dans la classe NeuralNetwork, chaque voiture dispose de son propre réseau de neurones (même structure mais poids éventuellement différents).
 
