@@ -10,19 +10,21 @@ Le but va être d'apprendre à de petites voitures à se déplacer de manière a
 <img src="https://amp.businessinsider.com/images/57768fc1dd0895585b8b4d01-1920-1439.png" width="300" alt="Tesla">
 
 Comme ça en fait : 
+
 <img src="https://drive.google.com/uc?id=1ums42Jb9u-cz9fxdZjznur8HnkJfmU3u" width="300" alt="Original">
 
 ###Structure des voitures
 Chaque voiture est modélisée par un rectangle de taille fixée (réglable dans la classe Car de Components). Elle se dirige en prenant en compte sa distance aux murs dans les directions définies par l'attribut sensor_angles. 
 
-![sensors](https://drive.google.com/uc?id=14w72mTyjQM4kzG4PbpxYrDyTaA5BhzEN =300x)
+
+<img src="https://drive.google.com/uc?id=14w72mTyjQM4kzG4PbpxYrDyTaA5BhzEN" width="300" alt="Sensors">
 
 La fonction que l'on va apprendre est précisément celle qui prend en entrée ces distances et qui renvoie une variation angulaire et une vitesse (voir la fonction move de Car pour plus de précision sur la physique), cette fonction est approximée avec un réseau de neurone maison défini dans la classe NeuralNetwork, chaque voiture dispose de son propre réseau de neurones (même structure mais poids éventuellement différents).
 
 ###Structure du circuit
 La principale fonction du circuit est de permettre le calcul des distances aux murs dans les directions souhaitées et le calcul d'un score pour chaque voiture en vue de les classer.
 
-![score](https://drive.google.com/uc?id=1xUoccf_bwQFBRr7rUuQ3__JW5wjpYGUK)
+<img src="https://drive.google.com/uc?id=1xUoccf_bwQFBRr7rUuQ3__JW5wjpYGUK" width="300" alt="Score">
 
 Pour cela, on code le circuit sous la forme d'une image RGB avec les conventions suivantes :
 * Les pixels de l'intérieur du circuit (avec lesquels il n'y a pas de collisions et qui sont "transparents" pour les capteurs) sont en blanc (255, 255, 255)
@@ -36,7 +38,9 @@ L'entrainement des réseaux de neurones des voitures est un peu original par rap
 
 Mais alors quel est l'ADN d'une voiture ? En fait, ce sont les poids de son réseau de neurones qui sont placés dans une longue liste.
 
-![etapes](https://drive.google.com/uc?id=1pjAcGKTX91a_uPPy4wkSNz_frjeNbIbp =500x)
+<img src="https://drive.google.com/uc?id=1pjAcGKTX91a_uPPy4wkSNz_frjeNbIbp" width="300" alt="Etapes">
+
+
 
 
 Un petit peu plus proprement, l'algorithme présente 4 étapes principales :
@@ -63,7 +67,8 @@ start = (74, 300)
 Petites précisions sur l'affichage
 -----------------------------
 
-![affichage](https://drive.google.com/uc?id=1mBGOemDd6N3kKrxImKW-P25RLnF_WZ6z =400x)
+<img src="https://drive.google.com/uc?id=1mBGOemDd6N3kKrxImKW-P25RLnF_WZ6z" width="400" alt="Etapes">
+
 
 Il y a alors une fenêtre toute jolie qui s'affiche (si Pygame).
 À partir de la deuxième génération, les voitures ont des couleurs oranges (au hasard). Ces couleurs correspondent à la performance des parents de la voiture en question (plus c'est jaune, meilleurs sont les parents).
@@ -74,7 +79,7 @@ En bas à gauche, tu vois un petit réseau de neurones, c'est celui de la meille
 Créer un nouveau circuit
 -----------------------------
 
-![edition](https://drive.google.com/uc?id=1zmfVduTSC2470g6uQj2rKBMy5RK1WH2- =400x)
+<img src="https://drive.google.com/uc?id=1zmfVduTSC2470g6uQj2rKBMy5RK1WH2-" width="400" alt="Edition">
 
 Les circuits sont de simples images qui doivent respecter les conventions ci-dessus. Il y a quelques précautions à prendre pour éviter des erreurs embarrassantes :
 * Bien enregistrer les images sans canal alpha (transparence) si elles sont faites avec un logiciel de dessin
