@@ -41,7 +41,7 @@ L'entrainement des réseaux de neurones des voitures est un peu original par rap
 
 Mais alors quel est l'ADN d'une voiture ? En fait, ce sont les poids de son réseau de neurones qui sont placés dans une longue liste.
 
-<img src="https://drive.google.com/uc?id=1pjAcGKTX91a_uPPy4wkSNz_frjeNbIbp" width="300" alt="Etapes">
+<img src="https://drive.google.com/uc?id=1pjAcGKTX91a_uPPy4wkSNz_frjeNbIbp" width="400" alt="Etapes">
 
 
 
